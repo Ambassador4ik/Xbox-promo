@@ -30,7 +30,7 @@ class CodeGrabber:
     def __init__(self):
         dr_path = r'C:\\Program Files\\Mozilla Firefox\\geckodriver.exe'
         path = r'C:\\Program Files\\Mozilla Firefox\\firefox.exe'
-        args = ["--disable-gpu", "--disable-logging"]
+        args = ["--headless", "--disable-gpu", "--disable-logging"]
         driver = Driver(path=path, args=args, driver_path=dr_path)
         self.wdriver = driver.create_driver()
 
